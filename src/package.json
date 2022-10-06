@@ -16,11 +16,13 @@
     "email": "nate@natemoo.re",
     "url": "https://twitter.com/n_moore"
   },
-  "contributors": [{
-    "name": "Manuel Meister",
-    "email": "news.manuelsworld@gmail.com",
-    "url": "https://meister.io/"
-  }],
+  "contributors": [
+    {
+      "name": "Manuel Meister",
+      "email": "news.manuelsworld@gmail.com",
+      "url": "https://meister.io/"
+    }
+  ],
   "keywords": [
     "astro",
     "astro-component",
@@ -42,9 +44,9 @@
   },
   "homepage": "https://github.com/natemoo-re/astro-icon#readme",
   "dependencies": {
+    "@iconify/tools": "latest",
     "node-fetch": "^3.1.0",
     "resolve-pkg": "^2.0.0",
-    "svgo": "^2.8.0",
-    "@iconify/tools": "latest"
+    "svgo": "^2.8.0"
   }
 }
