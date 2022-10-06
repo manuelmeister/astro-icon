@@ -1,10 +1,11 @@
-const baseURL = "https://api.astroicon.dev/v1/";
+import {IconSet} from "@iconify/tools";
+
+const baseURL = import.meta.env.ASTRO_ICON_API ?? 'https://api.iconify.design/'
 const requests = new Map();
 const fetchCache = new Map();
 
-// Default resolver fetches icons from `api.astroicon.dev`
 export default async function get(pack: string, name: string) {
-  const url = new URL(`./${pack}/${name}`, baseURL).toString();
+  const url = new URL(`./${pack}.json?icons=${name}`, baseURL).toString();
   // Handle in-flight requests
   if (requests.has(url)) {
     return await requests.get(url);
@@ -18,14 +19,7 @@ export default async function get(pack: string, name: string) {
     if (!res.ok) {
       throw new Error(await res.text());
     }
-    const contentType = res.headers.get("Content-Type");
-    if (!contentType.includes("svg")) {
-      throw new Error(`[astro-icon] Unable to load "${name}" because it did not resolve to an SVG!
-
-Recieved the following "Content-Type":
-${contentType}`);
-    }
-    const svg = await res.text();
+    const svg = new IconSet(await res.json()).toString(name)
     fetchCache.set(url, svg);
     requests.delete(url);
     return svg;

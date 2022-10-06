@@ -1,6 +1,7 @@
 {
-  "name": "astro-icon",
-  "version": "0.7.3",
+  "name": "astro-iconify",
+  "description": "Easily use iconify service with the astro icon component",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     ".": "./index.ts",
@@ -15,6 +16,11 @@
     "email": "nate@natemoo.re",
     "url": "https://twitter.com/n_moore"
   },
+  "contributors": [{
+    "name": "Manuel Meister",
+    "email": "news.manuelsworld@gmail.com",
+    "url": "https://meister.io/"
+  }],
   "keywords": [
     "astro",
     "astro-component",
@@ -38,6 +44,7 @@
   "dependencies": {
     "node-fetch": "^3.1.0",
     "resolve-pkg": "^2.0.0",
-    "svgo": "^2.8.0"
+    "svgo": "^2.8.0",
+    "@iconify/tools": "latest"
   }
 }

@@ -1,5 +1,11 @@
 # astro-icon
 
+## 0.8.0
+
+### Major Changes
+
+- [#29](https://github.com/natemoo-re/astro-icon/issues/29) [`31b6eae`](https://github.com/natemoo-re/astro-icon/commit/31b6eaef63d229586933c5081e551c9b688360fb) Thanks [@manuelmeister](https://github.com/manuelmeister)! - Rewrite to support iconify api v2
+
 ## 0.7.3
 
 ### Patch Changes
