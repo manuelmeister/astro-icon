@@ -1,6 +1,6 @@
 {
   "name": "astro-iconify",
-  "description": "Easily use iconify service with the astro icon component",
+  "description": "Fork of astro-icon. Lets you easily use the up to date iconify service as a straight forward astro icon component.",
   "version": "1.0.0",
   "type": "module",
   "exports": {

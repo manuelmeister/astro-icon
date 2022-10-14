@@ -1,15 +1,15 @@
-# Astro Icon
+# Astro Iconify
 
-A straight-forward `Icon` component for [Astro](https://astro.build).
+Fork of [astro-icon](https://www.astroicon.dev/). Lets you easily use the up to date iconify service as a straight forward [astro](https://astro.build) icon component.
 
 ## Setup
 
-1. Install `astro-icon`.
+1. Install `astro-iconify`.
 
 ```bash
-npm i astro-icon
+npm i astro-iconify
 # or
-yarn add astro-icon
+yarn add astro-iconify
 ```
 
 2. Add the following to your `astro.config.mjs` file. See [Issue #2](https://github.com/natemoo-re/astro-icon/issues/2).
@@ -26,7 +26,7 @@ export default {
 
 ## Icon Packs
 
-`astro-icon` automatically includes all of the most common icon packs, powered by [Iconify](https://iconify.design/)!
+`astro-iconify` automatically includes all of the most common icon packs, powered by [Iconify](https://iconify.design/)!
 
 To browse supported icons, check the official [Icon Sets reference](https://icon-sets.iconify.design/) or visit [Icônes](https://icones.js.org/).
 
@@ -36,7 +36,7 @@ To browse supported icons, check the official [Icon Sets reference](https://icon
 
 ```astro
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-iconify'
 ---
 
 <!-- Automatically fetches and inlines Material Design Icon's "account" SVG -->
@@ -50,7 +50,7 @@ import { Icon } from 'astro-icon'
 
 ```astro
 ---
-import { Sprite } from 'astro-icon'
+import { Sprite } from 'astro-iconify'
 ---
 
 <!-- Required ONCE per page as a parent of any <Sprite> components! Creates `<symbol>` for each icon -->
@@ -69,7 +69,7 @@ You may also create [Local Icon Packs](#local-icon-packs).
 
 ## Local Icons
 
-By default, `astro-icon` supports custom local `svg` icons. They are optimized with [`svgo`](https://github.com/svg/svgo) automatically with no extra build step. See ["A Pretty Good SVG Icon System"](https://css-tricks.com/pretty-good-svg-icon-system/#just-include-the-icons-inline) from CSS Tricks.
+By default, `astro-iconify` supports custom local `svg` icons. They are optimized with [`svgo`](https://github.com/svg/svgo) automatically with no extra build step. See ["A Pretty Good SVG Icon System"](https://css-tricks.com/pretty-good-svg-icon-system/#just-include-the-icons-inline) from CSS Tricks.
 
 ### Usage
 
@@ -81,7 +81,7 @@ By default, `astro-icon` supports custom local `svg` icons. They are optimized w
 
 ```astro
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-iconify';
 ---
 
 <!-- Loads the SVG in `/src/icons/filename.svg` -->
@@ -92,7 +92,7 @@ import { Icon } from 'astro-icon';
 
 ```astro
 ---
-import { Sprite } from 'astro-icon';
+import { Sprite } from 'astro-iconify';
 ---
 
 <!-- Required ONCE per page as a parent of any <Sprite> components! Creates `<symbol>` for each icon -->
@@ -105,14 +105,14 @@ import { Sprite } from 'astro-icon';
 
 ## Local Icon Packs
 
-`astro-icon` supports custom local icon packs. These are also referenced with the `pack` and/or `name` props.
+`astro-iconify` supports custom local icon packs. These are also referenced with the `pack` and/or `name` props.
 
 1. Create a directory inside of `src/` named `icons/`.
 2. Create a JS/TS file with your `pack` name inside of that directory, eg `src/icons/my-pack.ts`
 3. Use the `createIconPack` utility to handle most common situations.
 
 ```ts
-import { createIconPack } from "astro-icon";
+import { createIconPack } from "astro-iconify";
 
 // Resolves `heroicons` dependency and reads SVG files from the `heroicons/outline` directory
 export default createIconPack({ package: "heroicons", dir: "outline" });
@@ -135,7 +135,7 @@ export default async (name: string): Promise<string> => {
 
 ## Styling
 
-Styling your `astro-icon` is straightforward. Any styles can be targeted to the `[astro-icon]` attribute selector. If you want to target a specific icon, you may target it by name using `[astro-icon="filename"]`.
+Styling your `astro-iconify` is straightforward. Any styles can be targeted to the `[astro-icon]` attribute selector. If you want to target a specific icon, you may target it by name using `[astro-icon="filename"]`.
 
 ```astro
 ---
