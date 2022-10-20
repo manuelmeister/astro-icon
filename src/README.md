@@ -2,9 +2,7 @@
 
 Fork of [astro-icon](https://www.astroicon.dev/). Lets you easily use the up to date iconify service as a straight forward [astro](https://astro.build) icon component.
 
-## Setup
-
-1. Install `astro-iconify`.
+## Install `astro-iconify`.
 
 ```bash
 npm i astro-iconify
@@ -12,17 +10,6 @@ npm i astro-iconify
 yarn add astro-iconify
 ```
 
-2. Add the following to your `astro.config.mjs` file. See [Issue #2](https://github.com/natemoo-re/astro-icon/issues/2).
-
-```js
-export default {
-  vite: {
-    ssr: {
-      external: ["svgo"],
-    },
-  },
-};
-```
 
 ## Icon Packs
 
