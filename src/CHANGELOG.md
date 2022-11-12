@@ -1,5 +1,11 @@
 # astro-icon
 
+## 1.2.0
+
+### Minor Changes
+
+- Update svgo to v3
+
 ## 1.1.0
 
 ### Minor Changes
