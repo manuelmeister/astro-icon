@@ -1,3 +1,3 @@
-import { createIconPack } from "astro-icon/pack";
+import { createIconPack } from "astro-iconify/pack";
 
 export default createIconPack({ package: "heroicons", dir: "outline" });
