@@ -1,7 +1,7 @@
 {
   "name": "astro-iconify",
   "description": "Fork of astro-icon. Lets you easily use the up to date iconify service as a straight forward astro icon component.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "exports": {
     ".": "./index.ts",
@@ -35,14 +35,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natemoo-re/astro-icon.git",
-    "directory": "packages/core"
+    "url": "git+https://github.com/manuelmeister/astro-iconify.git",
+    "directory": "src"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/natemoo-re/astro-icon/issues"
+    "url": "https://github.com/manuelmeister/astro-iconify/issues"
   },
-  "homepage": "https://github.com/natemoo-re/astro-icon#readme",
+  "homepage": "https://github.com/manuelmeister/astro-iconify#readme",
   "dependencies": {
     "@iconify/tools": "latest",
     "node-fetch": "^3.1.0",
